@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import { clerlMiddleware } from '@clerk/express';
+import { clerkMiddleware } from '@clerk/express';
 import fileUpload from 'express-fileupload';
 import path from 'path';
 
@@ -20,7 +20,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 app.use(express.json()); // Para analisar o req.body
-app.use(clerlMiddleware()); // Isto vai adicionar autenticação ao req obj => req.auth.userId
+app.use(clerkMiddleware()); // Isto vai adicionar autenticação ao req obj => req.auth.userId
 app.use(fileUpload({
     useTempFiles: true,
     tempFileDir: path.join(__dirname, "tmp"),
