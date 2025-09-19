@@ -2,7 +2,7 @@ import Topbar from "@/components/Topbar";
 import { useChatStore } from "@/stores/useChatStore";
 import { useUser } from "@clerk/clerk-react";
 import { useEffect } from "react";
-import UsersList from "./components/UsersList";
+import UsersList from "./components/UserList";
 import ChatHeader from "./components/ChatHeader";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
@@ -92,10 +92,10 @@ export default ChatPage;
 
 const NoConversationPlaceholder = () => (
 	<div className='flex flex-col items-center justify-center h-full space-y-6'>
-		<img src='/spotify.png' alt='Spotify' className='size-16 animate-bounce' />
+		{/* <img src='/spotify.png' alt='Spotify' className='size-16 animate-bounce' /> */}
 		<div className='text-center'>
-			<h3 className='text-zinc-300 text-lg font-medium mb-1'>No conversation selected</h3>
-			<p className='text-zinc-500 text-sm'>Choose a friend to start chatting</p>
+			<h3 className='text-zinc-300 text-lg font-medium mb-1'>Nenhuma conversa selecionada</h3>
+			<p className='text-zinc-500 text-sm'>Escolha um amigo para começar a conversar</p>
 		</div>
 	</div>
 );
