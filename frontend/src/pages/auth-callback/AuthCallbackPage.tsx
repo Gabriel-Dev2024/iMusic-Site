@@ -38,8 +38,8 @@ const AuthCallbackPage = () => {
 			<Card className='w-[90%] max-w-md bg-zinc-900 border-zinc-800'>
 				<CardContent className='flex flex-col items-center gap-4 pt-6'>
 					<Loader className='size-6 text-emerald-500 animate-spin' />
-					<h3 className='text-zinc-400 text-xl font-bold'>Fazendo Login</h3>
-					<p className='text-zinc-400 text-sm'>Redirecionando...</p>
+					<h3 className='text-zinc-400 text-xl font-bold'>Logging you in</h3>
+					<p className='text-zinc-400 text-sm'>Redirecting...</p>
 				</CardContent>
 			</Card>
 		</div>

@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { Song } from "@/types";
+import { Song } from "@/types";
 import { useChatStore } from "./useChatStore";
 
 interface PlayerStore {
@@ -39,7 +39,7 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
 		if (socket.auth) {
 			socket.emit("update_activity", {
 				userId: socket.auth.userId,
-				activity: `Tocando ${song.title} de ${song.artist}`,
+				activity: `Playing ${song.title} by ${song.artist}`,
 			});
 		}
 		set({
@@ -57,7 +57,7 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
 		if (socket.auth) {
 			socket.emit("update_activity", {
 				userId: socket.auth.userId,
-				activity: `Tocando ${song.title} de ${song.artist}`,
+				activity: `Playing ${song.title} by ${song.artist}`,
 			});
 		}
 
@@ -78,7 +78,7 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
 			socket.emit("update_activity", {
 				userId: socket.auth.userId,
 				activity:
-					willStartPlaying && currentSong ? `Tocando ${currentSong.title} de ${currentSong.artist}` : "Inativo",
+					willStartPlaying && currentSong ? `Playing ${currentSong.title} by ${currentSong.artist}` : "Idle",
 			});
 		}
 
@@ -99,7 +99,7 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
 			if (socket.auth) {
 				socket.emit("update_activity", {
 					userId: socket.auth.userId,
-					activity: `Tocando ${nextSong.title} de ${nextSong.artist}`,
+					activity: `Playing ${nextSong.title} by ${nextSong.artist}`,
 				});
 			}
 
@@ -116,7 +116,7 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
 			if (socket.auth) {
 				socket.emit("update_activity", {
 					userId: socket.auth.userId,
-					activity: `Inativo`,
+					activity: `Idle`,
 				});
 			}
 		}
@@ -133,7 +133,7 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
 			if (socket.auth) {
 				socket.emit("update_activity", {
 					userId: socket.auth.userId,
-					activity: `Tocando ${prevSong.title} de ${prevSong.artist}`,
+					activity: `Playing ${prevSong.title} by ${prevSong.artist}`,
 				});
 			}
 
@@ -150,7 +150,7 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
 			if (socket.auth) {
 				socket.emit("update_activity", {
 					userId: socket.auth.userId,
-					activity: `Inativo`,
+					activity: `Idle`,
 				});
 			}
 		}

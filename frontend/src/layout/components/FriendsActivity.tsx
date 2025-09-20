@@ -65,7 +65,7 @@ const FriendsActivity = () => {
 												</div>
 											</div>
 										) : (
-											<div className='mt-1 text-xs text-zinc-400'>Inativo</div>
+											<div className='mt-1 text-xs text-zinc-400'>Idle</div>
 										)}
 									</div>
 								</div>
@@ -93,8 +93,8 @@ const LoginPrompt = () => (
 		</div>
 
 		<div className='space-y-2 max-w-[250px]'>
-			<h3 className='text-lg font-semibold text-white'>Veja o que seus amigos estão ouvindo</h3>
-			<p className='text-sm text-zinc-400'>Faça login para descobrir que tipo de música seus amigos estão curtindo agora</p>
+			<h3 className='text-lg font-semibold text-white'>See What Friends Are Playing</h3>
+			<p className='text-sm text-zinc-400'>Login to discover what music your friends are enjoying right now</p>
 		</div>
 	</div>
 );

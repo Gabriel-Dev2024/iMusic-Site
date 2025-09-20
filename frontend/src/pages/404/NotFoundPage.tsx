@@ -18,7 +18,7 @@ export default function NotFoundPage() {
 					<h1 className='text-7xl font-bold text-white'>404</h1>
 					<h2 className='text-2xl font-semibold text-white'>Page not found</h2>
 					<p className='text-neutral-400 max-w-md mx-auto'>
-                        Parece que esta faixa se perdeu na confusão. Vamos voltar à música.
+						Looks like this track got lost in the shuffle. Let's get you back to the music.
 					</p>
 				</div>
 
@@ -29,14 +29,14 @@ export default function NotFoundPage() {
 						variant='outline'
 						className='bg-neutral-800 hover:bg-neutral-700 text-white border-neutral-700 w-full sm:w-auto'
 					>
-						Volte
+						Go Back
 					</Button>
 					<Button
 						onClick={() => navigate("/")}
 						className='bg-emerald-500 hover:bg-emerald-600 text-white w-full sm:w-auto'
 					>
 						<Home className='mr-2 h-4 w-4' />
-						Voltar para a Home
+						Back to Home
 					</Button>
 				</div>
 			</div>

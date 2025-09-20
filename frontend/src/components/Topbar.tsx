@@ -1,7 +1,7 @@
 import { SignedOut, UserButton } from "@clerk/clerk-react";
 import { LayoutDashboardIcon } from "lucide-react";
 import { Link } from "react-router-dom";
-import SignInOAuthButtons from "./SignInOAuthButtons.tsx";
+import SignInOAuthButtons from "./SignInOAuthButtons";
 import { useAuthStore } from "@/stores/useAuthStore";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
@@ -17,7 +17,7 @@ const Topbar = () => {
     '
 		>
 			<div className='flex gap-2 items-center'>
-				{/* <img src='/spotify.png' className='size-8' alt='Spotify logo' />  */}
+				{/* <img src='/spotify.png' className='size-8' alt='Spotify logo' /> */}
 				iMusic
 			</div>
 			<div className='flex items-center gap-4'>

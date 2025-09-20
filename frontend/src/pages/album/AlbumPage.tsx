@@ -62,11 +62,11 @@ const AlbumPage = () => {
 								className='w-[240px] h-[240px] shadow-xl rounded'
 							/>
 							<div className='flex flex-col justify-end'>
-								<p className='text-sm font-medium'>Álbum</p>
+								<p className='text-sm font-medium'>Album</p>
 								<h1 className='text-7xl font-bold my-4'>{currentAlbum?.title}</h1>
 								<div className='flex items-center gap-2 text-sm text-zinc-100'>
 									<span className='font-medium text-white'>{currentAlbum?.artist}</span>
-									<span>• {currentAlbum?.songs.length} Músicas</span>
+									<span>• {currentAlbum?.songs.length} songs</span>
 									<span>• {currentAlbum?.releaseYear}</span>
 								</div>
 							</div>
@@ -96,8 +96,8 @@ const AlbumPage = () => {
             text-zinc-400 border-b border-white/5'
 							>
 								<div>#</div>
-								<div>Título</div>
-								<div>Data de Lançamento</div>
+								<div>Title</div>
+								<div>Released Date</div>
 								<div>
 									<Clock className='h-4 w-4' />
 								</div>

@@ -18,32 +18,32 @@ const seedDatabase = async () => {
 			{
 				title: "Holy Wars... The Punishment Due",
 				artist: "Megadeth",
-				imageUrl: "/cover-images/Rust-In-Peace.jpg",
-				audioUrl: "/songs/Holy-Wars-The-Punishment-Due.mp3",
+				imageUrl: "/cover-images/1.jpg",
+				audioUrl: "/songs/1.mp3",
 				plays: Math.floor(Math.random() * 5000),
 				duration: 379.2, // 0:39
 			},
 			{
 				title: "Hangar 18",
 				artist: "Megadeth",
-				imageUrl: "/cover-images/Rust-In-Peace.jpg",
-				audioUrl: "/songs/Hangar-18.mp3",
+				imageUrl: "/cover-images/1.jpg",
+				audioUrl: "/songs/2.mp3",
 				plays: Math.floor(Math.random() * 5000),
 				duration: 306.6, // 0:41
 			},
 			{
 				title: "Tornado of Souls",
 				artist: "Megadeth",
-				imageUrl: "/cover-images/Rust-In-Peace.jpg",
-				audioUrl: "/songs/Tornado-Of-Souls.mp3",
+				imageUrl: "/cover-images/1.jpg",
+				audioUrl: "/songs/3.mp3",
 				plays: Math.floor(Math.random() * 5000),
 				duration: 311.4, // 0:24
 			},
 			{
 				title: "Rust in Peace",
 				artist: "Megadeth",
-				imageUrl: "/cover-images/Rust-In-Peace.jpg",
-				audioUrl: "/songs/Rust-in-Peace-Polaris.mp3",
+				imageUrl: "/cover-images/1.jpg",
+				audioUrl: "/songs/4.mp3",
 				plays: Math.floor(Math.random() * 5000),
 				duration: 326.4, // 0:24
 			},
@@ -54,7 +54,7 @@ const seedDatabase = async () => {
 			{
 				title: "Rust in Peace",
 				artist: "Megadeth",
-				imageUrl: "/albums/Rust-In-Peace.jpg",
+				imageUrl: "/albums/1.jpg",
 				releaseYear: 2024,
 				songs: createdSongs.slice(0, 4).map((song) => song._id),
 			},

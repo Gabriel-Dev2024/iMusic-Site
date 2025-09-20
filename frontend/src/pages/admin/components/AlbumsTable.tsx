@@ -16,11 +16,11 @@ const AlbumsTable = () => {
 			<TableHeader>
 				<TableRow className='hover:bg-zinc-800/50'>
 					<TableHead className='w-[50px]'></TableHead>
-					<TableHead>Título</TableHead>
-					<TableHead>Artista</TableHead>
-					<TableHead>Ano de Lançamento</TableHead>
-					<TableHead>Músicas</TableHead>
-					<TableHead className='text-right'>Ações</TableHead>
+					<TableHead>Title</TableHead>
+					<TableHead>Artist</TableHead>
+					<TableHead>Release Year</TableHead>
+					<TableHead>Songs</TableHead>
+					<TableHead className='text-right'>Actions</TableHead>
 				</TableRow>
 			</TableHeader>
 			<TableBody>

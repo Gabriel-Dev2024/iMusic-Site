@@ -11,9 +11,9 @@ const AlbumsTabContent = () => {
 					<div>
 						<CardTitle className='flex items-center gap-2'>
 							<Library className='h-5 w-5 text-violet-500' />
-							Biblioteca de Álbums
+							Albums Library
 						</CardTitle>
-						<CardDescription>Gerencie sua coleção de álbuns</CardDescription>
+						<CardDescription>Manage your album collection</CardDescription>
 					</div>
 					<AddAlbumDialog />
 				</div>

@@ -74,13 +74,13 @@ const AddAlbumDialog = () => {
 			<DialogTrigger asChild>
 				<Button className='bg-violet-500 hover:bg-violet-600 text-white'>
 					<Plus className='mr-2 h-4 w-4' />
-					Adicionar Álbum
+					Add Album
 				</Button>
 			</DialogTrigger>
 			<DialogContent className='bg-zinc-900 border-zinc-700'>
 				<DialogHeader>
-					<DialogTitle>Adicionar Álbum</DialogTitle>
-					<DialogDescription>Adicione um novo álbum à sua coleção</DialogDescription>
+					<DialogTitle>Add New Album</DialogTitle>
+					<DialogDescription>Add a new album to your collection</DialogDescription>
 				</DialogHeader>
 				<div className='space-y-4 py-4'>
 					<input
@@ -107,7 +107,7 @@ const AddAlbumDialog = () => {
 						</div>
 					</div>
 					<div className='space-y-2'>
-						<label className='text-sm font-medium'>Álbum Título</label>
+						<label className='text-sm font-medium'>Album Title</label>
 						<Input
 							value={newAlbum.title}
 							onChange={(e) => setNewAlbum({ ...newAlbum, title: e.target.value })}
@@ -116,7 +116,7 @@ const AddAlbumDialog = () => {
 						/>
 					</div>
 					<div className='space-y-2'>
-						<label className='text-sm font-medium'>Artista</label>
+						<label className='text-sm font-medium'>Artist</label>
 						<Input
 							value={newAlbum.artist}
 							onChange={(e) => setNewAlbum({ ...newAlbum, artist: e.target.value })}
@@ -125,7 +125,7 @@ const AddAlbumDialog = () => {
 						/>
 					</div>
 					<div className='space-y-2'>
-						<label className='text-sm font-medium'>Ano de Lançamento</label>
+						<label className='text-sm font-medium'>Release Year</label>
 						<Input
 							type='number'
 							value={newAlbum.releaseYear}
