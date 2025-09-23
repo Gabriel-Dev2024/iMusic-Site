@@ -22,14 +22,14 @@ dotenv.config();
 
 const __dirname = path.resolve();
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 const httpServer = createServer(app);
 initializeSocket(httpServer);
 
 app.use(
 	cors({
-		origin: "http://localhost:3000",
+		origin:  process.env.ORIGIN ||"http://localhost:3000",
 		credentials: true,
 	})
 );
