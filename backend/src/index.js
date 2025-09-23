@@ -80,7 +80,7 @@ if (process.env.NODE_ENV === "production") {
 
 // error handler
 app.use((err, req, res, next) => {
-	res.status(500).json({ message: process.env.NODE_ENV === "production" ? "Internal server error" : console.log(err) });
+	res.status(500).json({ message: process.env.NODE_ENV === "production" ? console.log(err) & "Internal server error" : err.message });
 });
 
 httpServer.listen(PORT, () => {
