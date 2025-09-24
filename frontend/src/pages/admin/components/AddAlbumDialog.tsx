@@ -39,7 +39,7 @@ const AddAlbumDialog = () => {
 
 		try {
 			if (!imageFile) {
-				return toast.error("Please upload an image");
+				return toast.error("Por favor carregue uma imagem");
 			}
 
 			const formData = new FormData();
@@ -61,9 +61,9 @@ const AddAlbumDialog = () => {
 			});
 			setImageFile(null);
 			setAlbumDialogOpen(false);
-			toast.success("Album created successfully");
+			toast.success("Álbum criado com sucesso");
 		} catch (error: any) {
-			toast.error("Failed to create album: " + error.message);
+			toast.error("Falha ao criar álbum: " + error.message);
 		} finally {
 			setIsLoading(false);
 		}
@@ -74,13 +74,13 @@ const AddAlbumDialog = () => {
 			<DialogTrigger asChild>
 				<Button className='bg-violet-500 hover:bg-violet-600 text-white'>
 					<Plus className='mr-2 h-4 w-4' />
-					Add Album
+					Adicionar Álbum
 				</Button>
 			</DialogTrigger>
 			<DialogContent className='bg-zinc-900 border-zinc-700'>
 				<DialogHeader>
-					<DialogTitle>Add New Album</DialogTitle>
-					<DialogDescription>Add a new album to your collection</DialogDescription>
+					<DialogTitle>Adicionar novo Álbum</DialogTitle>
+					<DialogDescription>Adicione um novo álbum à sua coleção</DialogDescription>
 				</DialogHeader>
 				<div className='space-y-4 py-4'>
 					<input
@@ -102,36 +102,36 @@ const AddAlbumDialog = () => {
 								{imageFile ? imageFile.name : "Upload album artwork"}
 							</div>
 							<Button variant='outline' size='sm' className='text-xs'>
-								Choose File
+								Escolha arquivo
 							</Button>
 						</div>
 					</div>
 					<div className='space-y-2'>
-						<label className='text-sm font-medium'>Album Title</label>
+						<label className='text-sm font-medium'>Título do Álbum</label>
 						<Input
 							value={newAlbum.title}
 							onChange={(e) => setNewAlbum({ ...newAlbum, title: e.target.value })}
 							className='bg-zinc-800 border-zinc-700'
-							placeholder='Enter album title'
+							placeholder='Insira o título do álbum'
 						/>
 					</div>
 					<div className='space-y-2'>
-						<label className='text-sm font-medium'>Artist</label>
+						<label className='text-sm font-medium'>Artista</label>
 						<Input
 							value={newAlbum.artist}
 							onChange={(e) => setNewAlbum({ ...newAlbum, artist: e.target.value })}
 							className='bg-zinc-800 border-zinc-700'
-							placeholder='Enter artist name'
+							placeholder='Digite o nome do artista'
 						/>
 					</div>
 					<div className='space-y-2'>
-						<label className='text-sm font-medium'>Release Year</label>
+						<label className='text-sm font-medium'>Ano de lançamento</label>
 						<Input
 							type='number'
 							value={newAlbum.releaseYear}
 							onChange={(e) => setNewAlbum({ ...newAlbum, releaseYear: parseInt(e.target.value) })}
 							className='bg-zinc-800 border-zinc-700'
-							placeholder='Enter release year'
+							placeholder='Insira o ano de lançamento'
 							min={1900}
 							max={new Date().getFullYear()}
 						/>
@@ -139,7 +139,7 @@ const AddAlbumDialog = () => {
 				</div>
 				<DialogFooter>
 					<Button variant='outline' onClick={() => setAlbumDialogOpen(false)} disabled={isLoading}>
-						Cancel
+						Cancelar
 					</Button>
 					<Button
 						onClick={handleSubmit}
